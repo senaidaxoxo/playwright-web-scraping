@@ -2,6 +2,14 @@
 
 ## Setup
 
+**System requirements**
+- Node.js 18+
+- Windows 10+, Windows Server 2016+ or Windows Subsystem for Linux (WSL).
+- macOS 13 Ventura, or macOS 14 Sonoma.
+- Debian 11, Debian 12, Ubuntu 20.04 or Ubuntu 22.04, Ubuntu 24.04, on x86-64 and arm64 architecture.
+
+
+
 1. Clone the repo
 
 ```
@@ -13,13 +21,21 @@ cd playwright-web-scraping
 
 You must have Node.js version >= 18 to run Playwright and this repo.
 Check your node version with `node -v` in the terminal.
-If you don't have the right version, try install [nvm](https://github.com/nvm-sh/nvm) (Node Version Manager) to install and use the latest version.
+If you don't have the right version, try installing [nvm](https://github.com/nvm-sh/nvm) (Node Version Manager) to install and use the latest version.
 
 Then, install the dependencies:
 
 ```
 npm install
 ```
+
+Then, install browser binaries used by Playwright with:
+```
+npx playwright install --with-deps
+```
+
+More info: https://playwright.dev/docs/browsers
+
 
 3. Run example scraper
 
