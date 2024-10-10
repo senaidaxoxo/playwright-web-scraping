@@ -1,0 +1,18 @@
+{
+  "name": "playwright-web-scraping",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "scrape": "node main.js",
+    "repl": "node -r ./repl.cjs"
+  },
+  "author": "Eric Rabinowitz",
+  "dependencies": {
+    "@playwright/browser-chromium": "^1.48.0",
+    "playwright": "^1.48.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
