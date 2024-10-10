@@ -5,7 +5,7 @@
 1. Clone the repo
 
 ```
-git clone <TODO>
+git clone https://github.com/ericrav/playwright-web-scraping.git
 cd playwright-web-scraping
 ```
 
