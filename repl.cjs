@@ -16,3 +16,4 @@ const cleanup = async () => {
 
 process.on('exit', cleanup);
 process.on('SIGINT', cleanup);
+process.on('SIGTERM', cleanup);

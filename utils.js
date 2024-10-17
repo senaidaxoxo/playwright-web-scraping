@@ -22,6 +22,8 @@ export async function launchBrowser(callback, { browser: browserType = 'chromium
   const context = await browser.newContext();
   const page = await context.newPage();
 
+  page.setDefaultTimeout(15000);
+
   async function screenshot(filename) {
     const name = filename || `${(await page.title()).replace(/\s/g, '_')}-${new Date().toJSON()}`;
     const path = `screenshots/${name}.png`;

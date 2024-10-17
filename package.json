@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "scrape": "node main.js",
-    "repl": "node -r ./repl.cjs"
+    "repl": "PWDEBUG=inspector NODE_INSPECT_RESUME_ON_START=1 node -r ./repl.cjs"
   },
   "author": "Eric Rabinowitz",
   "dependencies": {
