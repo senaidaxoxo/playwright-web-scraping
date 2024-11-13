@@ -20,7 +20,7 @@ import { delay } from './utils.js';
   );
 
   const h1Text = await page.$eval(
-    'div.mt-3 h1.fs-4',
+    'div.mt-3 my-2',
     h1 => h1.textContent
   );
   const cleanedTitle = h1Text ? h1Text.replace('— Free Stock Image', '').trim() : 'Untitled';
